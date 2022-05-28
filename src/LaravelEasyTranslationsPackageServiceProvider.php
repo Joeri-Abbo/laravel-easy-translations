@@ -5,6 +5,7 @@ namespace JoeriAbbo\LaravelEasyTranslations;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use JoeriAbbo\LaravelEasyTranslations\Console\Commands\Installer;
 use JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper;
 
 class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
@@ -38,6 +39,10 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
                 $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
             });
         }
+
+        $this->commands([
+            Installer::class,
+        ]);
     }
 
     /**
