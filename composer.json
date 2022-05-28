@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "JoeriAbbo\\LivewireSearch\\": "src/"
+      "JoeriAbbo\\LaravelEasyTranslations\\": "src/"
     }
   },
   "config": {
