@@ -9,10 +9,18 @@
       "email": "joeriabbo@hotmail.com"
     }
   ],
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "post-autoload-dump": [
+      "@php ./vendor/bin/testbench package:discover --ansi"
+    ]
+  },
   "require-dev": {
     "orchestra/testbench": "^7.3",
     "squizlabs/php_codesniffer": "^3.6.2",
-    "vimeo/psalm": "^4.23"
+    "vimeo/psalm": "^4.23",
+    "phpunit/phpunit": "^9.5.10",
+    "pestphp/pest": "^1.21"
   },
   "autoload": {
     "psr-4": {
