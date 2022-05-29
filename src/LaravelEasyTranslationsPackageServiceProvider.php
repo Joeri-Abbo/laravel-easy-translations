@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use JoeriAbbo\LaravelEasyTranslations\Console\Commands\Installer;
+use JoeriAbbo\LaravelEasyTranslations\Helper\Config;
 use JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper;
 
 class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
@@ -19,6 +20,9 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
 
     public function boot()
     {
+
+//       $this->loadViewsFrom(__DIR__.'/path/to/views', 'courier');
+
         Blade::directive('translate', function ($arguments) {
             // Funky madness to accept multiple arguments into the directive
             list($translation, $language) = array_pad(explode(',', trim($arguments, "() ")), 2, '');
@@ -52,10 +56,10 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
     protected function routeConfiguration(): array
     {
         return [
-            'routes_enabled' => config(self::PACKAGE_NAME . '.routes_enabled'),
-            'prefix' => config(self::PACKAGE_NAME . '.prefix'),
-            'middleware' => config(self::PACKAGE_NAME . '.middleware'),
-            'namespace' => config(self::PACKAGE_NAME . '.namespace'),
+            'routes_enabled' => Config::getSetting('routes_enabled'),
+            'prefix' => Config::getSetting('prefix'),
+            'middleware' => Config::getSetting('middleware'),
+            'namespace' => Config::getSetting('namespace'),
         ];
     }
 }
