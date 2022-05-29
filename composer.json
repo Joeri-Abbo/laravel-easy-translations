@@ -41,5 +41,10 @@
       "@php ./vendor/bin/testbench package:discover --ansi"
     ],
     "test": "vendor/bin/pest"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JoeriAbbo\\LaravelEasyTranslations\\": "tests"
+    }
   }
 }

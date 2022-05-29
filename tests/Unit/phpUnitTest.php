@@ -1,6 +1,6 @@
 <?php
 
-namespace Tracefy\Boilerplate\Tests\Unit;
+namespace JoeriAbbo\LaravelEasyTranslations\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
