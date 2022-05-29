@@ -284,10 +284,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-}.text-left {
-  text-align: left;
 }.text-center {
   text-align: center;
-}.text-right {
-  text-align: right;
 }
