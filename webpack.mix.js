@@ -12,8 +12,8 @@ require('mix-tailwindcss');
  |
  */
 
-mix.js('assets/src/app.js', 'assets/build');
-mix.css('assets/src/app.css', 'assets/build', [
+mix.js('resources/assets/src/app.js', 'resources/assets/build');
+mix.css('resources/assets/src/app.css', 'resources/assets/build', [
         require('postcss-import'),
         require('tailwindcss'),
     ])
