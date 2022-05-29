@@ -8,7 +8,6 @@ use JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvi
 
 class Config
 {
-
     /**
      * @return Repository|Application|mixed
      */
