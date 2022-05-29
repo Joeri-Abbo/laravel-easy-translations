@@ -21,6 +21,11 @@
       "JoeriAbbo\\LaravelEasyTranslations\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "JoeriAbbo\\LaravelEasyTranslations\\": "tests"
+    }
+  },
   "config": {
     "allow-plugins": {
       "pestphp/pest-plugin": true,
@@ -41,10 +46,5 @@
       "@php ./vendor/bin/testbench package:discover --ansi"
     ],
     "test": "vendor/bin/pest"
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "JoeriAbbo\\LaravelEasyTranslations\\": "tests"
-    }
   }
 }
