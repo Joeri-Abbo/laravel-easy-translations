@@ -36,7 +36,7 @@
     "webpack-dev-server": "^4.9.1"
   },
   "dependencies": {
-    "laravel-mix": "^6.0.43",
+    "laravel-mix": "^6.0.44",
     "postcss-import": "^14.1.0"
   }
 }
