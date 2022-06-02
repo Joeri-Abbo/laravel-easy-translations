@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="telescope">
-    <div class="bg-red-600">
+    <div class="bg-red-600 text-5xl italic">
         I Love You In Every Universe
         @yield('content')
     </div>
