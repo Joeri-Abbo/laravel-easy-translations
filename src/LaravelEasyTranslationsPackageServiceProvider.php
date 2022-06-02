@@ -20,7 +20,7 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-//       $this->loadViewsFrom(__DIR__.'/path/to/views', 'courier');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', self::PACKAGE_NAME);
 
         Blade::directive('translate', function ($arguments) {
             // Funky madness to accept multiple arguments into the directive
