@@ -11,7 +11,9 @@
 </head>
 <body>
 <div id="telescope">
-    @yield('content')
+    <div class="bg-white">
+        @yield('content')
+    </div>
 </div>
 </body>
 </html>

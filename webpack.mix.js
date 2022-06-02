@@ -12,13 +12,17 @@ require('mix-tailwindcss');
  |
  */
 
-mix.js('resources/assets/src/app.js', 'resources/assets/build');
-mix.css('resources/assets/src/app.css', 'resources/assets/build', [
+mix.setPublicPath(`./resources/assets/build/`);
+
+mix.tailwind('./tailwind.config.js')
+    .css('resources/assets/src/app.css', 'css', [
         require('postcss-import'),
         require('tailwindcss'),
     ])
-    .tailwind('./tailwind.config.js');
-
+    .js('resources/assets/src/app.js', 'js')
+    // .sourceMaps()
+    .version();
+mix.sourceMaps().version();
 if (mix.inProduction()) {
     mix.version();
 }

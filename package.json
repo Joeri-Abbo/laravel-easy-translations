@@ -36,6 +36,7 @@
     "webpack-dev-server": "^4.9.1"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.44",
     "postcss-import": "^14.1.0"
   }

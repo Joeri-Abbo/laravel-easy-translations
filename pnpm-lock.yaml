@@ -4,6 +4,7 @@ specifiers:
   '@babel/core': ^7.18.2
   '@babel/preset-env': ^7.18.2
   babel-loader: ^8.2.5
+  cross-env: ^7.0.3
   css-loader: ^6.7.1
   laravel-mix: ^6.0.44
   mix-tailwindcss: ^1.3.0
@@ -18,6 +19,7 @@ specifiers:
   webpack-dev-server: ^4.9.1
 
 dependencies:
+  cross-env: 7.0.3
   laravel-mix: 6.0.44_postcss@8.4.14
   postcss-import: 14.1.0_postcss@8.4.14
 
@@ -2255,6 +2257,14 @@ packages:
       ripemd160: 2.0.2
       safe-buffer: 5.2.1
       sha.js: 2.4.11
+    dev: false
+
+  /cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
     dev: false
 
   /cross-spawn/7.0.3:
