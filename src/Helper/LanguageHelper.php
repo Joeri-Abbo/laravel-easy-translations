@@ -2,7 +2,7 @@
 
 namespace JoeriAbbo\LaravelEasyTranslations\Helper;
 
-use JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider as Config;
+use JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider as Provider;
 
 class LanguageHelper
 {
@@ -36,7 +36,7 @@ class LanguageHelper
      */
     public function getDefaultLanguage(): string
     {
-        return config(Config::PACKAGE_NAME . '.default_language');
+        return config(Provider::PACKAGE_NAME . '.default_language');
     }
 
     /**
@@ -71,7 +71,48 @@ class LanguageHelper
             $language = $this->getLanguage();
         }
 
-// Return the translation if it exists. form json file
+        $path = $this->getLanguageFilePath($language);
+        $translations = $this->getLanguageFileData($path);
+
+        if (array_key_exists($translation, $translations)) {
+            return $translations[$translation];
+        }
+        $translations[$translation] = $translation;
+        $this->updateLangFile($path, $translations);
         return $translation;
+    }
+
+    /**
+     * @param string $path
+     * @param array $data
+     * @return void
+     */
+    public function updateLangFile(string $path, array $data): void
+    {
+        file_put_contents($path, json_encode($data));
+    }
+
+    /**
+     * Get language file data.
+     * @param string $path
+     * @return array
+     */
+    public function getLanguageFileData(string $path): array
+    {
+        if (file_exists($path)) {
+            return json_decode(file_get_contents($path), true);
+        }
+
+        return [];
+    }
+
+    /**
+     * Get the language file path.
+     * @param string $language
+     * @return string
+     */
+    public function getLanguageFilePath(string $language): string
+    {
+        return Config::getSetting('storage_path') . '/' . $language . '.json';
     }
 }
