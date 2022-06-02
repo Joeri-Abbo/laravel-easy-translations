@@ -284,12 +284,4 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-}.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-}.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}.italic {
-  font-style: italic;
 }
