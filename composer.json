@@ -17,6 +17,9 @@
     "vimeo/psalm": "^4.23"
   },
   "autoload": {
+    "files": [
+      "helpers/general.php"
+    ],
     "psr-4": {
       "JoeriAbbo\\LaravelEasyTranslations\\": "src/"
     }
