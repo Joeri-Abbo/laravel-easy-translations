@@ -3,9 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.18.2
   '@babel/preset-env': ^7.18.2
+  autoprefixer: ^10.4.7
   babel-loader: ^8.2.5
   cross-env: ^7.0.3
   css-loader: ^6.7.1
+  flowbite: ^1.4.7
+  install: ^0.13.0
   laravel-mix: ^6.0.44
   mix-tailwindcss: ^1.3.0
   postcss: ^8.4.14
@@ -26,8 +29,11 @@ dependencies:
 devDependencies:
   '@babel/core': 7.18.2
   '@babel/preset-env': 7.18.2_@babel+core@7.18.2
+  autoprefixer: 10.4.7_postcss@8.4.14
   babel-loader: 8.2.5_dzrarqmejens5o5lr5bdn3kdtu
   css-loader: 6.7.1_webpack@5.73.0
+  flowbite: 1.4.7
+  install: 0.13.0
   mix-tailwindcss: 1.3.0_laravel-mix@6.0.44
   postcss: 8.4.14
   postcss-loader: 7.0.0_mepnsno3xmng6eyses4tepu7bu
@@ -1298,6 +1304,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+
+  /@popperjs/core/2.11.5:
+    resolution: {integrity: sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==}
+    dev: true
 
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -2872,6 +2882,13 @@ packages:
       locate-path: 5.0.0
       path-exists: 4.0.0
 
+  /flowbite/1.4.7:
+    resolution: {integrity: sha512-/U0gOIY9RFlMWEMAVnjZpVYzSG0uEDlZ0kLCuTURukXSxqkWi3xulqooPlfmf2aw0wEMJy7d/IWEm3DntP4aUw==}
+    dependencies:
+      '@popperjs/core': 2.11.5
+      mini-svg-data-uri: 1.4.4
+    dev: true
+
   /follow-redirects/1.15.1:
     resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
     engines: {node: '>=4.0'}
@@ -3231,6 +3248,11 @@ packages:
 
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+
+  /install/0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
+    dev: true
 
   /interpret/2.2.0:
     resolution: {integrity: sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==}
@@ -3607,6 +3629,11 @@ packages:
       webpack: 5.73.0_webpack-cli@4.9.2
       webpack-sources: 1.4.3
     dev: false
+
+  /mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
+    dev: true
 
   /minimalistic-assert/1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
