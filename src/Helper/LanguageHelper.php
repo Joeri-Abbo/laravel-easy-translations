@@ -31,6 +31,27 @@ class LanguageHelper
     }
 
     /**
+     * Get the language.
+     * @return array
+     */
+    public function getLanguages(): array
+    {
+        $languages = scandir(Config::getSetting('storage_path'));
+        foreach (['.DS_Store', '.', '..', '.gitkeep'] as $item) {
+            unset($languages[array_search($item, $languages)]);
+        }
+        if (empty($languages)) {
+            return [];
+        }
+
+        foreach ($languages as &$language) {
+            $language = str_replace('.json', '', $language);
+        }
+
+        return array_values($languages);
+    }
+
+    /**
      * Get the default language.
      * @return string
      */

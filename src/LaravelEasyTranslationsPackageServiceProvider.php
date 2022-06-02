@@ -20,6 +20,10 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        $this->publishes([
+            __DIR__ . '/../resources/assets/build' => public_path('vendor/' . self::PACKAGE_NAME),
+        ], 'public');
+
         $this->loadViewsFrom(__DIR__ . '/../resources/views', self::PACKAGE_NAME);
 
         Blade::directive('translate', function ($arguments) {
