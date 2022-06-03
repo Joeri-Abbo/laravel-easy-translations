@@ -2,11 +2,11 @@
 
 namespace JoeriAbbo\LaravelEasyTranslations\Http\Controllers\Languages;
 
-use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Http\Response;
+use Illuminate\View\View;
+use JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper;
 use JoeriAbbo\LaravelEasyTranslations\Http\Controllers\Controller;
 use JoeriAbbo\LaravelEasyTranslations\Http\Requests\Languages\EditRequest;
-use JoeriAbbo\LaravelEasyTranslations\Http\Requests\Languages\UpdateRequest;
+use JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider as Provider;
 
 class Edit extends Controller
 {
@@ -15,11 +15,17 @@ class Edit extends Controller
      *
      * @param EditRequest $request
      * @param string $language
-     * @return Response
+     * @return View
      */
-    public function __invoke(EditRequest $request, string $language): Response
+    public function __invoke(EditRequest $request, string $language): View
     {
-        $validated_data = $request->validated();
-        dd($validated_data, $language);
+        $languages = LanguageHelper::getInstance()->getLanguages();
+        if (!in_array($language, $languages)) {
+            return view(Provider::PACKAGE_NAME . '::pages.404');
+        }
+
+        return view(Provider::PACKAGE_NAME . '::pages.index', [
+            'languages' => LanguageHelper::getInstance()->getLanguages()
+        ]);
     }
 }
