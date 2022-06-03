@@ -20,10 +20,5 @@ mix.tailwind('./tailwind.config.js')
         require('tailwindcss'),
     ])
     .js('resources/assets/src/app.js', 'js')
-    // .sourceMaps()
     .version();
 mix.sourceMaps().version();
-if (mix.inProduction()) {
-    mix.version();
-}
-
