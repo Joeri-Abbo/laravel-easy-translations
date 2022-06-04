@@ -3,7 +3,7 @@
     <div class="px-8 flex justify-center items-center mb-4">
         <div class="min-w-[400px] max-w-[500px]">
             @if(session()->has('message'))
-                <div class="bg-green-400 rounded p-2 my-1">
+                <div class="bg-green-400 rounded py-2 my-1">
                     {{ session()->get('message') }}
                 </div>
             @endif
