@@ -7,7 +7,9 @@
             </h2>
             <form
                     action="{{route(\JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider::PACKAGE_NAME.'.update',$language)}}"
-                    method="put">
+                    method="post">
+                {{ csrf_field() }}
+                {{ method_field('PUT') }}
                 @foreach(\JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper::getInstance()->getLanguageTranslations($language) as $key => $value)
                     <div class="mb-6">
                         <label for="{{$key}}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
