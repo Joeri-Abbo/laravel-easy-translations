@@ -92,15 +92,36 @@ class LanguageHelper
             $language = $this->getLanguage();
         }
 
-        $path = $this->getLanguageFilePath($language);
-        $translations = $this->getLanguageFileData($path);
+        $translations = $this->getLanguageTranslations($language);
 
         if (array_key_exists($translation, $translations)) {
             return $translations[$translation];
         }
         $translations[$translation] = $translation;
-        $this->updateLangFile($path, $translations);
+        $this->setLanguageTranslations($language, $translations);
         return $translation;
+    }
+
+    /**
+     * Get the strings for language
+     * @param string $language
+     * @return array
+     */
+    public function getLanguageTranslations(string $language): array
+    {
+        $path = $this->getLanguageFilePath($language);
+        return $this->getLanguageFileData($path);
+    }
+
+    /**
+     * Set the translational for the given language.
+     * @param string $language
+     * @param array $translations
+     * @return void
+     */
+    public function setLanguageTranslations(string $language, array $translations): void
+    {
+        $this->updateLangFile($this->getLanguageFilePath($language), $translations);
     }
 
     /**

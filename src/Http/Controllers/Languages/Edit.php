@@ -24,8 +24,8 @@ class Edit extends Controller
             return view(Provider::PACKAGE_NAME . '::pages.404');
         }
 
-        return view(Provider::PACKAGE_NAME . '::pages.index', [
-            'languages' => LanguageHelper::getInstance()->getLanguages()
+        return view(Provider::PACKAGE_NAME . '::pages.edit', [
+            'language' => $language
         ]);
     }
 }
