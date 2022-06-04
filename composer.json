@@ -49,5 +49,8 @@
       "@php ./vendor/bin/testbench package:discover --ansi"
     ],
     "test": "vendor/bin/pest"
+  },
+  "require": {
+    "stichoza/google-translate-php": "^4.1"
   }
 }

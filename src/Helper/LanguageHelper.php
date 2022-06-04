@@ -111,7 +111,7 @@ class LanguageHelper
      */
     public function getTranslationKey(string $translation): string
     {
-        return $this->strReplace(['-', '.', '"', "'"], '_', Str::slug($translation));
+        return Str::slug($this->strReplace(['-', '.', '"', "'"], '_', $translation));
     }
 
     /**
