@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use JoeriAbbo\LaravelEasyTranslations\Console\Commands\Installer;
+use JoeriAbbo\LaravelEasyTranslations\Console\Commands\TranslateLanguageFile;
 use JoeriAbbo\LaravelEasyTranslations\Helper\Config;
 use JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper;
 
@@ -49,6 +50,7 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
 
         $this->commands([
             Installer::class,
+            TranslateLanguageFile::class
         ]);
     }
 
