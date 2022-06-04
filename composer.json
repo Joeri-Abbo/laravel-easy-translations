@@ -9,6 +9,9 @@
       "email": "joeriabbo@hotmail.com"
     }
   ],
+  "require": {
+    "stichoza/google-translate-php": "^4.1"
+  },
   "require-dev": {
     "orchestra/testbench": "^7.3",
     "pestphp/pest": "^1.21",
@@ -49,8 +52,5 @@
       "@php ./vendor/bin/testbench package:discover --ansi"
     ],
     "test": "vendor/bin/pest"
-  },
-  "require": {
-    "stichoza/google-translate-php": "^4.1"
   }
 }
