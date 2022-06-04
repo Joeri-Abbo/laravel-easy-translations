@@ -13,5 +13,12 @@
 <div id="laravel-easy-translations">
     {!! $slot !!}
 </div>
+<div class="h-auto py-2 text-center bg-black text-white">
+    Copyright &copy; {{date('Y')}}
+    <a target="_blank" href="https://www.linkedin.com/in/joeri-abbo-43a457144/" class="underline font-bold">
+        Joeri Abbo
+    </a>
+    All Rights Reserved
+</div>
 </body>
 </html>
