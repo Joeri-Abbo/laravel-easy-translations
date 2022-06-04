@@ -2,6 +2,7 @@
 
 namespace JoeriAbbo\LaravelEasyTranslations\Helper;
 
+use Illuminate\Support\Str;
 use JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider as Provider;
 
 class LanguageHelper
@@ -94,12 +95,38 @@ class LanguageHelper
 
         $translations = $this->getLanguageTranslations($language);
 
-        if (array_key_exists($translation, $translations)) {
-            return $translations[$translation];
+        $translation_key = $this->getTranslationKey($translation);
+        if (array_key_exists($translation_key, $translations)) {
+            return $translations[$translation_key];
         }
-        $translations[$translation] = $translation;
+        $translations[$translation_key] = $translation;
         $this->setLanguageTranslations($language, $translations);
         return $translation;
+    }
+
+    /**
+     * Get the given translations key for translation.
+     * @param string $translation
+     * @return string
+     */
+    public function getTranslationKey(string $translation): string
+    {
+        return $this->strReplace(['-', '.', '"', "'"], '_', Str::slug($translation));
+    }
+
+    /**
+     * Bulk replace
+     * @param array $items
+     * @param string $replace
+     * @param string $string
+     * @return string
+     */
+    public function strReplace(array $items, string $replace, string $string): string
+    {
+        foreach ($items as $search) {
+            $string = str_replace($search, $replace, $string);
+        }
+        return $string;
     }
 
     /**
