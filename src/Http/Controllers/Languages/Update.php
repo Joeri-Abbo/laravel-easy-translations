@@ -2,8 +2,8 @@
 
 namespace JoeriAbbo\LaravelEasyTranslations\Http\Controllers\Languages;
 
-use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Http\Response;
+use Illuminate\Http\RedirectResponse;
+use JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper;
 use JoeriAbbo\LaravelEasyTranslations\Http\Controllers\Controller;
 use JoeriAbbo\LaravelEasyTranslations\Http\Requests\Languages\UpdateRequest;
 
@@ -14,10 +14,14 @@ class Update extends Controller
      *
      * @param UpdateRequest $request
      * @param string $language
-     * @return Response
+     * @return RedirectResponse
      */
-    public function __invoke(UpdateRequest $request, string $language): Response
+    public function __invoke(UpdateRequest $request, string $language): RedirectResponse
     {
-        dd($request->input(), $language);
+        $translations = $request->input();
+        unset($translations['_token']);
+        unset($translations['_method']);
+        LanguageHelper::getInstance()->setLanguageTranslations($language, $translations);
+        return redirect()->back()->with('message', 'Transulations updated!');
     }
 }
