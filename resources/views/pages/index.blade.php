@@ -7,7 +7,7 @@
             </h2>
             @if(!empty($languages = \JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper::getInstance()->getLanguages()))
                 <ul class="mb-2">
-                    @foreach(array_merge($languages, $languages)  as $language)
+                    @foreach($languages as $language)
                         <li class="py-2 relative border-b-black border-solid">
                             {{ucfirst($language)}}
                             <a href="{{route(\JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider::PACKAGE_NAME.'.edit',$language)}}"
