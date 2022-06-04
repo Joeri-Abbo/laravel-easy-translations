@@ -18,7 +18,6 @@ class Update extends Controller
      */
     public function __invoke(UpdateRequest $request, string $language): Response
     {
-        $validated_data = $request->validated();
-        dd($validated_data, $language);
+        dd($request->input(), $language);
     }
 }
