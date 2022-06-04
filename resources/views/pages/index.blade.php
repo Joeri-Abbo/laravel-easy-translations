@@ -14,13 +14,12 @@
                                class="absolute right-0 border-orange-500 border-solid rounded px-2 py-1 mt-[-5px]; bg-orange-500; hover:bg-orange-300">
                                 Edit
                                 <img src="{{asset( 'vendor/laravel-easy-translations/images/pencil-solid.svg')}}"
-                                     class="mr-3 sm:h-9 inline h-1"
+                                     class="mr-3 sm:h-2 inline h-2"
                                      alt="Github Logo"/>
                             </a>
                         </li>
                     @endforeach
                 </ul>
-
             @else
                 No languages found, did you implement this package correctly?
             @endif
