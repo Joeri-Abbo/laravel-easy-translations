@@ -11,10 +11,10 @@
                         <li class="py-2 relative border-b-black border-solid">
                             {{ucfirst($language)}}
                             <a href="{{route(\JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvider::PACKAGE_NAME.'.edit',$language)}}"
-                               class="absolute right-0 border-orange-500 border-solid rounded px-2 py-1 mt-[-5px]; bg-orange-500; hover:bg-orange-300">
+                               class="absolute right-0 border-orange-500 border-solid rounded px-2 py-1 mt-[-5px] bg-orange-500 hover:bg-orange-300">
                                 Edit
                                 <img src="{{asset( 'vendor/laravel-easy-translations/images/pencil-solid.svg')}}"
-                                     class="mr-3 sm:h-2 inline h-2"
+                                     class="mr-3 sm:h-4 inline h-4"
                                      alt="Github Logo"/>
                             </a>
                         </li>

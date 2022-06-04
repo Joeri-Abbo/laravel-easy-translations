@@ -637,6 +637,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }.mb-2 {
   margin-bottom: 0.5rem;
+}.mt-\[-5px\] {
+  margin-top: -5px;
 }.mr-3 {
   margin-right: 0.75rem;
 }.ml-3 {
@@ -663,18 +665,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }.hidden {
   display: none;
-}.h-1 {
-  height: 0.25rem;
+}.h-4 {
+  height: 1rem;
 }.h-auto {
   height: auto;
 }.h-6 {
   height: 1.5rem;
-}.h-2 {
-  height: 0.5rem;
 }.h-9 {
   height: 2.25rem;
-}.h-4 {
-  height: 1rem;
 }.w-6 {
   width: 1.5rem;
 }.w-full {
@@ -784,6 +782,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.border-b-black {
   --tw-border-opacity: 1;
   border-bottom-color: rgba(0, 0, 0, var(--tw-border-opacity));
+}.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 90, 31, var(--tw-bg-opacity));
 }.bg-black {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
@@ -1032,12 +1033,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-color: rgba(75, 85, 99, var(--tw-ring-opacity));
 }@media (min-width: 640px) {
 
-  .sm\:h-9 {
-    height: 2.25rem;
+  .sm\:h-4 {
+    height: 1rem;
   }
 
-  .sm\:h-2 {
-    height: 0.5rem;
+  .sm\:h-9 {
+    height: 2.25rem;
   }
 
   .sm\:px-4 {
