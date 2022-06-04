@@ -9,7 +9,7 @@ specifiers:
   css-loader: ^6.7.1
   flowbite: ^1.4.7
   install: ^0.13.0
-  laravel-mix: ^6.0.47
+  laravel-mix: ^6.0.48
   mix-tailwindcss: ^1.3.0
   postcss: ^8.4.14
   postcss-import: ^14.1.0
@@ -23,7 +23,7 @@ specifiers:
 
 dependencies:
   cross-env: 7.0.3
-  laravel-mix: 6.0.47_postcss@8.4.14
+  laravel-mix: 6.0.48_postcss@8.4.14
   postcss-import: 14.1.0_postcss@8.4.14
 
 devDependencies:
@@ -34,7 +34,7 @@ devDependencies:
   css-loader: 6.7.1_webpack@5.73.0
   flowbite: 1.4.7
   install: 0.13.0
-  mix-tailwindcss: 1.3.0_laravel-mix@6.0.47
+  mix-tailwindcss: 1.3.0_laravel-mix@6.0.48
   postcss: 8.4.14
   postcss-loader: 7.0.0_mepnsno3xmng6eyses4tepu7bu
   postcss-preset-env: 7.7.1_postcss@8.4.14
@@ -3400,8 +3400,8 @@ packages:
     resolution: {integrity: sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==}
     engines: {node: '>= 8'}
 
-  /laravel-mix/6.0.47_postcss@8.4.14:
-    resolution: {integrity: sha512-px+FUqObtbjKMHTGL6//38ttWvvZB2czMd2r/KRiu9+0UqNo/UNWwVbqMpHr+lGT/gX90Gl/LIfVhP/+uYf8gg==}
+  /laravel-mix/6.0.48_postcss@8.4.14:
+    resolution: {integrity: sha512-dOuFOC1S2cOREG6zyu3vGADSaWpagVfZwUUN88P7kUWewXc7IeqTZJVSCDlqtXS2pR+eP6k8JzQwz1QglCqfoQ==}
     engines: {node: '>=12.14.0'}
     hasBin: true
     peerDependencies:
@@ -3650,13 +3650,13 @@ packages:
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
 
-  /mix-tailwindcss/1.3.0_laravel-mix@6.0.47:
+  /mix-tailwindcss/1.3.0_laravel-mix@6.0.48:
     resolution: {integrity: sha512-K76U+TS2wiKOKv8I6muMGbzg+3CrAQaI5cGduMzmjkSLS1GolL4kYSGJCP9LrtjAmFb9vINCzqPDNiNEjoeX3w==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
       laravel-mix: ^2.1.7||^3.0||^4.0||^5.0||^6.0
     dependencies:
-      laravel-mix: 6.0.47_postcss@8.4.14
+      laravel-mix: 6.0.48_postcss@8.4.14
     dev: true
 
   /ms/2.0.0:
