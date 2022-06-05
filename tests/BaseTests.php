@@ -9,7 +9,6 @@ use JoeriAbbo\LaravelEasyTranslations\LaravelEasyTranslationsPackageServiceProvi
 class BaseTests extends \Orchestra\Testbench\TestCase
 {
     protected $loadEnvironmentVariables = true;
-
     use DatabaseMigrations;
     use WithFaker;
 
@@ -19,7 +18,7 @@ class BaseTests extends \Orchestra\Testbench\TestCase
      * @param \Illuminate\Foundation\Application $app
      * @return void
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         // Setup default database to use sqlite :memory:
         $app['config']->set('database.default', 'testbench');
@@ -39,7 +38,7 @@ class BaseTests extends \Orchestra\Testbench\TestCase
         ])->run();
     }
 
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             LaravelEasyTranslationsPackageServiceProvider::class,
