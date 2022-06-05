@@ -169,7 +169,7 @@ class LanguageHelper
     public function getLanguageFileData(string $path): array
     {
         if (file_exists($path)) {
-            return json_decode(file_get_contents($path), true);
+            return json_decode(file_get_contents($path), true) ?? [];
         }
 
         return [];
