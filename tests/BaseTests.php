@@ -37,7 +37,6 @@ class BaseTests extends \Orchestra\Testbench\TestCase
             '--database' => 'testbench',
             '--path' => '../../../../database/migrations'
         ])->run();
-
     }
 
     protected function getPackageProviders($app)

@@ -2,7 +2,6 @@
 
 namespace JoeriAbbo\LaravelEasyTranslations\Tests\TestsHelpers;
 
-
 class LanguageHelper extends \JoeriAbbo\LaravelEasyTranslations\Helper\LanguageHelper
 {
     public array $languageData = [];
@@ -31,6 +30,4 @@ class LanguageHelper extends \JoeriAbbo\LaravelEasyTranslations\Helper\LanguageH
 
         return [];
     }
-
-
 }
