@@ -22,3 +22,11 @@ jobs:
         run: composer install
       - name: Run tests
         run: composer test
+      - name: Run Unit Tests
+        run: XDEBUG_MODE_COVERAGE=coverage vendor/bin/phpunit
+      - name: Generate test coverage badge
+        uses: ./
+        with:
+          coverage_badge_path: 'badge.svg'
+          push_badge: true
+          repo_token: ${{ secrets.GITHUB_TOKEN }
