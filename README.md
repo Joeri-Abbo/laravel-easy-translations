@@ -1,2 +1,2 @@
 # laravel-easy-transulations
-WIP build
+[![Test](https://github.com/Joeri-Abbo/laravel-easy-translations/actions/workflows/test.yml/badge.svg)](https://github.com/Joeri-Abbo/laravel-easy-translations/actions/workflows/test.yml)
