@@ -29,7 +29,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "JoeriAbbo\\LaravelEasyTranslations\\": "tests"
+      "JoeriAbbo\\LaravelEasyTranslations\\Tests\\": "tests"
     }
   },
   "config": {

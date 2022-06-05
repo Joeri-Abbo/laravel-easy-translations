@@ -22,13 +22,13 @@ class LanguageHelper
      * Get the instance of the LanguageHelper.
      * @return static
      */
-    public static function getInstance(): self
+    public static function getInstance(): static
     {
-        if (is_null(self::$instance)) {
-            self::$instance = new self();
+        if (is_null(static::$instance)) {
+            static::$instance = new static();
         }
 
-        return self::$instance;
+        return static::$instance;
     }
 
     /**
@@ -58,7 +58,7 @@ class LanguageHelper
      */
     public function getDefaultLanguage(): string
     {
-        return config(Provider::PACKAGE_NAME . '.default_language');
+        return config(Provider::PACKAGE_NAME . '.default_language', 'en');
     }
 
     /**
