@@ -9,10 +9,10 @@
     }
   ],
   "require": {
+    "ergebnis/composer-normalize": "^2.28",
     "stichoza/google-translate-php": "^4.1"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.28",
     "orchestra/testbench": "^7.3",
     "pestphp/pest": "^1.21",
     "phpunit/phpunit": "^9.5.10",
