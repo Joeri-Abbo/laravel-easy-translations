@@ -2,7 +2,6 @@
   "name": "joeri-abbo/laravel-easy-translations",
   "description": "Laravel laravel-easy-translations support",
   "type": "library",
-  "version": "dev-master",
   "authors": [
     {
       "name": "Joeri Abbo",
