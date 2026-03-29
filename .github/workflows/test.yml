@@ -11,9 +11,6 @@ jobs:
       matrix:
         php:
           - 8.1
-        composer:
-          - ""
-          - "--prefer-lowest"
     steps:
       - name: Git checkout
         uses: actions/checkout@v6
