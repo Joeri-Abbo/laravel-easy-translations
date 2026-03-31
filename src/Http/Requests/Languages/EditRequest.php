@@ -22,6 +22,7 @@ class EditRequest extends Request
      *
      * @return array
      */
+    #[\Override]
     public function messages(): array
     {
         return [];

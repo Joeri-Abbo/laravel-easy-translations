@@ -14,6 +14,7 @@ class LaravelEasyTranslationsPackageServiceProvider extends ServiceProvider
 {
     public const PACKAGE_NAME = 'laravel-easy-translations';
 
+    #[\Override]
     public function register()
     {
         //
