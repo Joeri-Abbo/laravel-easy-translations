@@ -38,7 +38,7 @@
     "tailwindcss": "^4.1.14",
     "webpack": "^5.102.1",
     "webpack-cli": "^5.0.0",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
     "cross-env": "^10.1.0",
