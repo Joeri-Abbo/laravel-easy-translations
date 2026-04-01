@@ -55,8 +55,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.104.1)
       tailwindcss:
-        specifier: ^4.1.14
-        version: 4.1.14
+        specifier: ^4.2.2
+        version: 4.2.2
       webpack:
         specifier: ^5.104.1
         version: 5.104.1(webpack-cli@7.0.2)
@@ -3779,8 +3779,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  tailwindcss@4.1.14:
-    resolution: {integrity: sha512-b7pCxjGO98LnxVkKjaZSDeNuljC4ueKUddjENJOADtubtdo8llTaJy7HwBMeLNSSo2N5QIAgklslK1+Ir8r6CA==}
+  tailwindcss@4.2.2:
+    resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
 
   tapable@2.3.2:
     resolution: {integrity: sha512-1MOpMXuhGzGL5TTCZFItxCc0AARf1EZFQkGqMm7ERKj8+Hgr5oLvJOVFcC+lRmR8hCe2S3jC4T5D7Vg/d7/fhA==}
@@ -8452,7 +8452,7 @@ snapshots:
       sax: 1.6.0
       stable: 0.1.8
 
-  tailwindcss@4.1.14: {}
+  tailwindcss@4.2.2: {}
 
   tapable@2.3.2: {}
 
