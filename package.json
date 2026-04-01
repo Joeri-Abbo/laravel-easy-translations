@@ -24,7 +24,7 @@
   "homepage": "https://github.com/Joeri-Abbo/laravel-easy-translations#readme",
   "devDependencies": {
     "@babel/core": "^7.28.3",
-    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-env": "^7.29.2",
     "autoprefixer": "^10.4.27",
     "babel-loader": "^10.1.1",
     "css-loader": "^7.1.4",
