@@ -36,11 +36,13 @@ class Request extends FormRequest
      *
      * @throws UnauthorizedException
      */
+    #[\Override]
     protected function failedAuthorization()
     {
         abort(403, 'Unauthorized action.');
     }
 
+    #[\Override]
     protected function failedValidation(Validator $validator)
     {
         $errors = $validator->errors()->all();
