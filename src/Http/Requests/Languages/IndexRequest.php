@@ -22,6 +22,7 @@ class IndexRequest extends Request
      *
      * @return array
      */
+    #[\Override]
     public function messages()
     {
         return [
