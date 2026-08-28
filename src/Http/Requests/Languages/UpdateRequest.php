@@ -22,6 +22,7 @@ class UpdateRequest extends Request
      *
      * @return array
      */
+    #[\Override]
     public function messages(): array
     {
         return [];
