@@ -55,8 +55,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.112.2)
       tailwindcss:
-        specifier: ^4.3.3
-        version: 4.3.3
+        specifier: ^4.3.4
+        version: 4.3.4
       webpack:
         specifier: ^5.112.2
         version: 5.112.2(clean-css@5.3.0)(cssnano@5.1.12(postcss@8.5.32))(csso@4.2.0)(html-minifier-terser@5.1.1)(imagemin@7.0.1)(postcss@8.5.32)(svgo@2.8.4)(webpack-cli@7.3.1)
@@ -3866,8 +3866,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  tailwindcss@4.3.3:
-    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
+  tailwindcss@4.3.4:
+    resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}
 
   tapable@2.3.3:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
@@ -8637,7 +8637,7 @@ snapshots:
       sax: 1.6.0
       stable: 0.1.8
 
-  tailwindcss@4.3.3: {}
+  tailwindcss@4.3.4: {}
 
   tapable@2.3.3: {}
 
