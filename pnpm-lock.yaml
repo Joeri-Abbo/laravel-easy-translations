@@ -55,8 +55,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.112.2)
       tailwindcss:
-        specifier: ^4.3.4
-        version: 4.3.4
+        specifier: ^4.3.5
+        version: 4.3.5
       webpack:
         specifier: ^5.112.2
         version: 5.112.2(clean-css@5.3.0)(cssnano@5.1.12(postcss@8.5.32))(csso@4.2.0)(html-minifier-terser@5.1.1)(imagemin@7.0.1)(postcss@8.5.32)(svgo@2.8.4)(webpack-cli@7.3.1)
@@ -3897,8 +3897,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  tailwindcss@4.3.4:
-    resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}
+  tailwindcss@4.3.5:
+    resolution: {integrity: sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==}
 
   tapable@2.3.3:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
@@ -4349,7 +4349,7 @@ snapshots:
   '@babel/helper-define-polyfill-provider@0.3.3(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1)':
     dependencies:
       '@babel/core': 7.29.13(supports-color@8.1.1)
-      '@babel/helper-compilation-targets': 7.29.7
+      '@babel/helper-compilation-targets': 7.29.13
       '@babel/helper-plugin-utils': 7.29.7
       debug: 4.4.3(supports-color@8.1.1)
       lodash.debounce: 4.0.8
@@ -4380,8 +4380,8 @@ snapshots:
 
   '@babel/helper-module-imports@7.29.7(supports-color@8.1.1)':
     dependencies:
-      '@babel/traverse': 7.29.7(supports-color@8.1.1)
-      '@babel/types': 7.29.7
+      '@babel/traverse': 7.29.13(supports-color@8.1.1)
+      '@babel/types': 7.29.11
     transitivePeerDependencies:
       - supports-color
 
@@ -4510,7 +4510,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.29.7
       '@babel/core': 7.29.13(supports-color@8.1.1)
-      '@babel/helper-compilation-targets': 7.29.7
+      '@babel/helper-compilation-targets': 7.29.13
       '@babel/helper-plugin-utils': 7.29.7
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.29.13(supports-color@8.1.1))
       '@babel/plugin-transform-parameters': 7.29.7(@babel/core@7.29.13(supports-color@8.1.1))
@@ -8716,7 +8716,7 @@ snapshots:
       sax: 1.6.0
       stable: 0.1.8
 
-  tailwindcss@4.3.4: {}
+  tailwindcss@4.3.5: {}
 
   tapable@2.3.3: {}
 
