@@ -25,8 +25,8 @@ importers:
         specifier: ^7.29.14
         version: 7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1)
       autoprefixer:
-        specifier: ^10.6.2
-        version: 10.6.2(postcss@8.5.33)
+        specifier: ^10.7.0
+        version: 10.7.0(postcss@8.5.33)
       babel-loader:
         specifier: ^10.1.1
         version: 10.1.1(@babel/core@7.29.13(supports-color@8.1.1))(webpack@5.113.0)
@@ -1537,8 +1537,8 @@ packages:
   assert@1.5.0:
     resolution: {integrity: sha512-EDsgawzwoun2CZkCgtxJbv392v4nbk9XDD06zI+kQYoBM/3RBWLlEyJARDOmhAAosBjWACEkKL6S+lIZtcAubA==}
 
-  autoprefixer@10.6.2:
-    resolution: {integrity: sha512-VOw9/yGTGwPPgzFcODtcv6zhEPIeIWkRSe10L2ri2f5vZ7ID7lCt6jZzRF5/ubgOZ+szYydmEF5AYsA5jxX1tA==}
+  autoprefixer@10.7.0:
+    resolution: {integrity: sha512-M4rWhYFPp8YSAfqLDT/wRN9trfe/Z/aZLPxrLQJUQRTPrChss2T+hmgaV5770J52bLuGOMzt6Hjl8tEb6YWv5Q==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -6156,10 +6156,10 @@ snapshots:
       object-assign: 4.1.1
       util: 0.10.3
 
-  autoprefixer@10.6.2(postcss@8.5.33):
+  autoprefixer@10.7.0(postcss@8.5.33):
     dependencies:
-      browserslist: 4.29.3
-      caniuse-lite: 1.0.30001814
+      browserslist: 4.29.6
+      caniuse-lite: 1.0.30001826
       fraction.js: 5.3.4
       picocolors: 1.1.1
       postcss: 8.5.33
@@ -7483,7 +7483,7 @@ snapshots:
       '@types/imagemin-mozjpeg': 8.0.1
       '@types/imagemin-optipng': 5.2.1
       '@types/imagemin-svgo': 8.0.1
-      autoprefixer: 10.6.2(postcss@8.5.33)
+      autoprefixer: 10.7.0(postcss@8.5.33)
       babel-loader: 8.4.1(@babel/core@7.29.13(supports-color@8.1.1))(webpack@5.113.0)
       chalk: 4.1.2
       chokidar: 3.5.3
@@ -8285,7 +8285,7 @@ snapshots:
       '@csstools/postcss-text-decoration-shorthand': 5.0.8(postcss@8.5.33)
       '@csstools/postcss-trigonometric-functions': 5.0.10(postcss@8.5.33)
       '@csstools/postcss-unset-value': 5.0.0(postcss@8.5.33)
-      autoprefixer: 10.6.2(postcss@8.5.33)
+      autoprefixer: 10.7.0(postcss@8.5.33)
       browserslist: 4.29.6
       css-blank-pseudo: 8.0.2(postcss@8.5.33)
       css-has-pseudo: 8.0.2(postcss@8.5.33)
